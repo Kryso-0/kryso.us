@@ -29,9 +29,61 @@
             border: none;
             cursor: pointer;
         }
+        .nav-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .menu-button {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+    <div class="nav-container">
+        <div class="dropdown">
+            <button class="menu-button">Menu ▼</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="login.html">Admin</a>
+                <a href="https://xrpscan.com" target="_blank">Explore the Ledger</a>
+                <a href="https://x.com/Kryso_0" target="_blank">Find me on X</a>
+            </div>
+        </div>
+    </div>
     <h1>Admin Panel</h1>
     <p>Enter your credentials:</p>
     <input type="text" id="username" placeholder="Username">
