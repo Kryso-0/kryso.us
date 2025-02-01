@@ -133,6 +133,8 @@
       padding: 15px;
       margin-bottom: 10px;
       font-family: 'Space Mono', monospace;
+      font-weight: bold;
+      text-transform: uppercase;
       text-align: center;
       font-size: 0.9rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
@@ -172,7 +174,7 @@
       }
       .ledger-block {
         display: inline-block;
-        width: 15%;
+        width: 12%;
       }
     }
   </style>
@@ -253,10 +255,10 @@
         div.className = "ledger-block w3-card w3-padding w3-border-white";
         div.style.fontFamily = "inherit";
         div.innerHTML = `
-          <strong>Ledger ${ledger.index}</strong><br>
-          <strong>${ledger.transactions} Txns</strong><br>
-          <strong>${ledger.burned} Burned</strong>
-        `;
+            Ledger ${ledger.index}<br>
+            ${ledger.transactions} Txns<br>
+                    `;
+
         ledgerContainer.appendChild(div);
       });
     }
