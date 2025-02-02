@@ -1,0 +1,22 @@
+[METADATA]
+modified = 2025-02-01T00:13:35.000Z
+expires = 2026-01-01T00:00:00.000Z
+
+
+[[ACCOUNTS]]
+address = "rM1Go4N6Tm8Xf8PusDmmwN1giuL3KNrNAs"
+desc = "staged for future use"
+
+
+[[SERVERS]]
+json_rpc = "https://xrpl.kryso.us:51234/"
+ws = "wss://xrpl.kryso.us/"
+peer = "https://xrpl.kryso.us:51235/"
+desc = "hobby stock server"
+
+
+[[PRINCIPALS]]
+name = "Michael Payton" 
+email = "michael@kryso.us"
+social_1 = "https://x.com/Kryso_0" 
+
